@@ -1,0 +1,28 @@
+
+/* 
+Základní syntaxe CSS
+
+selector {
+    vlastnost-1: hodnota;
+    vlastnost-2: hodnota;
+    vlastnost-3: hodnota;
+    vlastnost-4: hodnota;
+    vlastnost-5: hodnota;
+    ...
+    vlastnost-n: hodnota;
+}
+
+*/
+
+body {
+    background-color: #edf5d4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+p {
+   font-family: 'Times New Roman', Times, serif;
+   
+   /* velikost písma */
+   font-size: 18px; 
+}
