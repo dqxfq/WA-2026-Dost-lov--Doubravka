@@ -42,10 +42,10 @@ class Mista {
 
         // SQL dotaz pro načtení všech míst z databáze, včetně autora místa (nickname nebo username)
         $sql = "SELECT mista.*, 
-                        //má li uzivatel přezdívku, zobraz tu, jinak zobraz jeho username
+                       
                        COALESCE(NULLIF(uzivatele.nickname, ''), uzivatele.username) AS autor
                 FROM mista
-                //propojuje tabulku míst s tabulkou uživatelů, aby se získal autor místa
+                
                 LEFT JOIN uzivatele ON mista.created_by = uzivatele.id
                 ORDER BY mista.id DESC"; // seřazení míst podle id sestupně, tedy nejnovější místo bude první
 
